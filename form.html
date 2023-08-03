@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qualification For Job</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      fieldset {
+        max-width: 500px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <h1>Please fill up the form</h1>
+        <form action="">
+          <label for="name">
+            Your name:
+            <input type="text" placeholder="type your name" id="name" />
+          </label>
+          <label for="email">
+            Your email:
+            <input type="email" placeholder="type your email" id="email" />
+          </label>
+          <label for="phone">
+            Phone number:
+            <input type="tel" placeholder="phone number" id="phone" />
+          </label>
+          <fieldset>
+            <legend>Which type of developer</legend>
+            <label for="front-end developer">
+              <input
+                type="radio"
+                name="developer"
+                id="front-end developer"
+              />front-end-developer
+            </label>
+            <label for="back-end developer">
+              <input type="radio" name="developer" id="back-end developer" />
+              back-end-developer
+            </label>
+            <label for="full stack developer">
+              <input
+                type="radio"
+                name="developer"
+                id="full stack developer"
+              />full stack developer
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Skills</legend>
+            <label for="html">
+              <input type="checkbox" name="skills" id="html" />HTML
+            </label>
+            <label for="css">
+              <input type="checkbox" name="skills" id="css" />CSS
+            </label>
+            <label for="bootstrap">
+              <input type="checkbox" name="skills" id="bootstrap" />Bootstrap
+            </label>
+            <label for="tailwind">
+              <input type="checkbox" name="skills" id="tailwind" />Tailwind
+            </label>
+            <label for="javascript">
+              <input type="checkbox" name="skills" id="javascript" />Javascript
+            </label>
+            <label for="wordpress">
+              <input type="checkbox" name="skills" id="wordpress" />WordPress
+            </label>
+            <label for="php">
+              <input type="checkbox" name="skills" id="php" />PHP
+            </label>
+            <label for="python">
+              <input type="checkbox" name="skills" id="python" />Python
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Description</legend>
+            <textarea
+              name="about you"
+              id="bio"
+              cols="60"
+              rows="10"
+              placeholder="type something about you"
+            ></textarea>
+          </fieldset>
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
